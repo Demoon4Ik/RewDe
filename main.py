@@ -1,9 +1,17 @@
 import random
 points = {"computer": 0, "player": 0}
-
+def odd_number(number):
+    if number % 2 == 0:
+        return False
+    else:
+        return True
 while True:
     a = random.randint(10 ,90)
+    if odd_number(a) == False:
+        continue
     b = random.randint(10 ,90)
+    if odd_number(b) == False:
+        continue
     op = random.choice(("+","-"))
     if op == "+":
         c = (a+b)
@@ -18,6 +26,7 @@ while True:
         points["computer"] += 1
         print("Увы.Вы оказались не правы... Очки зачисляются компьютеру!")
     print(f'Счет!{points["player"]}:{points["computer"]}')
+
 
 
 
