@@ -1,4 +1,4 @@
-import random
+import игра
 points = {"computer": 0, "player": 0}
 def odd_number(number):
     if number % 2 == 0:
